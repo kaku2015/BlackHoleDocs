@@ -52,6 +52,8 @@
 
 ![image](https://github.com/kaku2015/PrivacySafeDocs/blob/master/images-zh/delete_account_6.png)
 
+建议手机保持在这个账户界面，因为删除账户后有些应用很快会自动添加回来，确保激活前没有自动添加回来的账户。
+
 6. 如果您之前设置过多用户或手机自带访客模式、应用双开等，也需要一并关闭或删除（之后可以打开）。
 7. 在电脑上执行命令： ```.\adb shell dpm set-device-owner com.hld.apurikakusu/.receiver.DPMReceiver``` 
 </br>**请注意这里一定要使用以上命令，截图只是示例**
@@ -73,6 +75,9 @@
 - **问：提示 “Not allowed to ... already several accounts on the device”**
 - 答：第 5 步的账户没删干净，请注销您手机上所有的账户，包括 Google 账号和系统自带的如小米账户、三星账户等。注意：如果您的设备是 Xperia 或 ZUK，请尝试拔出 SIM 卡，待配置完成后再插上。
 </br>**补充：如已确定删除了所有账户还是提示存在账户，可使用命令 ```adb shell pm list users``` 查看账户后，使用命令 ```adb shell pm remove-user 用户id``` 删除账户。**
+
+![image](https://github.com/kaku2015/PrivacySafeDocs/blob/master/images-zh/delete_account.png)
+
 </br>**小米手机如果都已确认删除，还是提示以上两个问题的话，则需要恢复出厂后再进行设置。恢复出厂后登录小米账号时请不要同步云服务，设置成功后可以随意操作。**
 
 - **问：移除账号后，提示 “您的管理员不允许进行此更改”**

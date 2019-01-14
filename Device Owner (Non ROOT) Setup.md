@@ -30,6 +30,8 @@
 
 ![image](https://github.com/kaku2015/BlackHoleDocs/blob/master/images/delete_account_6.jpg)
 
+It is recommended that the phone remain on this account interface, as some apps will be automatically added back soon after the account is deleted, ensuring that the account is not automatically added before activation.
+
 3. If multi-user or guest mode has been set on your device, also need to be closed or deleted
 4. Run ```adb shell dpm set-device-owner com.hld.apurikakusu/.receiver.DPMReceiver``` on your computer.
 
@@ -47,6 +49,8 @@
 - **Q: It shows "Not allowed to ... already several accounts on the device"**
 - A: Please follow step 2 and remove ALL accounts. PS: Pulling out SIM card may be required for Xperia and ZUK devices.
 </br>**Added: You can use the command ```adb shell pm list users``` view the accounts, use the command ```adb shell pm remove-user user id``` to delete the account.**
+
+![image](https://github.com/kaku2015/BlackHoleDocs/blob/master/images/delete_account.png)
 
 - **Q: It shows "Not allowed to ... already several users on the device"**
 - A: Please follow step 3 and remove the guest mode or multi app/private mode.
